@@ -15,11 +15,12 @@ x_train = std.fit_transform(data)
 # 逻辑回归预测
 lg = LogisticRegression(C=1.0)
 
+print("训练模型中...")
 lg.fit(x_train, label)
-
+print("训练结束")
 
 test_data = [[0,1,1,0,0],[1,0,0,1,1],[0,1,1,1,1]]
-
+print("模型预测：")
 y_predict = lg.predict(test_data)
 
 test_label =[1,0,1]
