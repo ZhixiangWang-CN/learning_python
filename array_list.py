@@ -1,4 +1,3 @@
-import numpy as np
 
 a = range(5)
 
